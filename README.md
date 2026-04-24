@@ -13,7 +13,6 @@ Fitur utama mencakup:
 - Laravel 13
 - MySQL
 - Blade Template
-- Tailwind CSS (CDN)
 
 ## Modul dan Fitur
 
@@ -75,45 +74,6 @@ Menampilkan statistik utama:
 - status (dipinjam | dikembalikan | terlambat)
 - created_at, updated_at
 
-Catatan relasi:
-- FK pada peminjaman menggunakan restrict delete untuk menjaga integritas data.
-
-## Alur CRUD
-
-### Anggota
-1. Klik menu Anggota.
-2. Klik tombol Tambah Anggota.
-3. Isi form dan simpan.
-4. Gunakan Edit/Hapus pada tabel.
-
-### Buku
-1. Klik menu Buku.
-2. Klik tombol Tambah Buku.
-3. Isi form dan simpan.
-4. Gunakan Edit/Hapus pada tabel.
-
-### Peminjaman
-1. Klik menu Peminjaman.
-2. Klik tombol Tambah Peminjaman.
-3. Pilih anggota dan buku, isi tanggal/status.
-4. Simpan, lalu kelola data melalui tabel.
-
-
-## Rute Utama
-- GET / -> dashboard
-- GET /anggota
-- POST /anggota
-- PUT /anggota/{id}
-- DELETE /anggota/{id}
-- GET /buku
-- POST /buku
-- PUT /buku/{id}
-- DELETE /buku/{id}
-- GET /peminjaman
-- POST /peminjaman
-- PUT /peminjaman/{id}
-- DELETE /peminjaman/{id}
-
 ## Cara Menjalankan
 1. Install dependency:
 
@@ -152,15 +112,6 @@ Menjalankan test:
 php artisan test
 ```
 
-Test yang tersedia:
-- Feature test alur CRUD
-- Feature test validasi dan relasi
-
-## Persiapan Presentasi UJK
-- Buka aplikasi di browser (dashboard + form CRUD)
-- Buka source code (route, controller, migration, view)
-- Buka database (tabel anggota, buku, peminjaman)
-- Siapkan penjelasan variabel, method, library, dan error handling
 
 ## Catatan
 Dokumentasi ini dibuat untuk memenuhi ketentuan dokumen kode program pada UJK.
